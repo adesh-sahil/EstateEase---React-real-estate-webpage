@@ -23,6 +23,10 @@ nav {
         flex: 3;
         align-items: center;
         gap: 50px;
+
+        @include tablet {
+            gap: 30px;
+        }
         img {
             height: 70px;
         }
@@ -52,6 +56,11 @@ nav {
             padding: 12px 24px;
             margin: 6px;
             border-radius: 5px;
+
+            @include tablet {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
         }
 
         .signIn {
@@ -66,6 +75,7 @@ nav {
 
         .menuIcon {
             display: none;
+            cursor: pointer;
             img {
                 height: 36px;
                 width: 36px;
