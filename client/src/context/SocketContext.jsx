@@ -9,7 +9,7 @@ export const SocketContextProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    setSocket(io("http://localhost:4000"));
+    setSocket(io(process.env.REACT_APP_SOCKET_URL || "http://localhost:4000"));
   }, []);
 
   useEffect(() => {
