@@ -1,0 +1,143 @@
+@import "../../responsive.scss";
+
+.homePage {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: #f5f3ff;
+  .textcontainer {
+    flex: 1;
+    max-width: 900px;
+    @include tablet {
+        max-width: 600px;
+    }
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: 20px;
+
+      @include tablet {
+        padding: 0;
+      }
+
+      @include mobile {
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 48px;
+        text-align: center;
+        span {
+          color: #00bcd4;
+        }
+        @include tablet {
+          font-size: 32px;
+        }
+      }
+      p {
+        color: #c5c1c1;
+      }
+
+      .boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include mobile {
+          display: none;
+        }
+        h2 {
+          font-weight: 600;
+          font-size: 36px;
+          color: #00bcd4;
+
+          @include tablet {
+            font-size: 32px;
+          }
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 300;
+          color: #f5f5f5;
+        }
+        .box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// @import "../../responsive.scss";
+
+// .homePage {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+//   z-index: 1;
+//   padding: 0 20px;
+//   color: #fcf5ff;
+
+//   .textcontainer {
+//     width: 100%;
+//     max-width: 1200px;
+//     .wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       gap: 50px;
+//       padding: 0 20px;
+//       height: 100%;
+//     }
+
+//     .title {
+//       font-size: 48px;
+
+//       @include mobile {
+//         font-size: 28px;
+//       }
+//     }
+
+//     .boxes {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       @include mobile {
+//         display: none;
+//       }
+
+//       h2 {
+//         font-weight: 600;
+//         font-size: 36px;
+
+//         @include laptop {
+//           font-size: 32px;
+//         }
+//       }
+
+//       h3 {
+//         font-size: 16px;
+//         font-weight: 300;
+//       }
+
+//       .box {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,211 @@
+@import "../../responsive.scss";
+
+.singlePage {
+    display: flex;
+    height: 100%;
+
+    @include tablet {
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .details {
+        flex: 3;
+        height: 100%;
+        overflow-y: scroll;
+
+        @include tablet {
+            flex: none;
+            height: max-content;
+        }
+
+        .wrapper {
+            padding-right: 50px;
+
+            @include mobile {
+                padding-right: 0;
+            }
+
+            .info {
+                margin-top: 50px;
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    .post {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        h1 {
+                            color: #00bcd4;
+                            font-weight: 400;
+                        }
+                        .address {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            color: #bcb8b8;
+                            font-size: 16px;
+
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+
+                        }
+                        .price {
+                            padding: 5px;
+                            background-color: #90f2ff;
+                            width: max-content;
+                            border-radius: 5px;
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
+                    }
+                    .user {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        padding: 0 50px;
+                        border-radius: 10px;
+                        background-color: #89f2ff;
+                        font-weight: 600;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .bottom {
+                    margin-top: 50px;
+                    color: #f5f3ff;
+                    margin-bottom: 70px;
+
+                }
+            }
+        }
+    }
+    .features {
+        flex: 2;
+        background-color: #fcf5f3;
+        padding: 10px;
+        padding-top: 30px;
+        border-radius: 20px;
+        border-top-right-radius: 40px;
+        margin-bottom: 20px;
+        height: 100%;
+        overflow-y: scroll;
+
+        @include tablet {
+            flex: none;
+            height: max-content;
+        }
+
+        .wrapper {
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 70px;
+
+            @include mobile {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 14px;
+            }
+            
+            .feature {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .listVertical {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 20px 10px;
+                background-color: #fff;
+                border-radius: 10px;
+            }
+
+            .listHorizontal {
+                display: flex;
+                justify-content: space-around;
+                gap: 20px;
+                padding: 20px 10px;
+                background-color: #fff;
+                border-radius: 10px;
+            }
+
+            .sizes {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px 10px;
+                background-color: #fff;
+                border-radius: 10px;
+
+                @include laptop {
+                    font-size: 12px;
+                }
+                
+                .size {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+            }
+
+            .mapContainer {
+                width: 100%;
+                height: 200px;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    display: flex;
+                    padding: 12px;
+                    margin-top: 10px;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: #fff;
+                    border: 1px solid rgb(132, 132, 251);
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+
+    }
+}

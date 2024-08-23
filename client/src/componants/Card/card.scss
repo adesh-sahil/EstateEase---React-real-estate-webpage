@@ -1,0 +1,104 @@
+@import "../../responsive.scss";
+
+.card {
+    display: flex;
+    gap: 20px;
+
+    .imgContainer {
+        flex: 2;
+        height: 200px;
+
+        @include mobile {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .textContainer {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600px;
+            color: #fcf5ff;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                color: #00bcd4;
+                scale: 1.02;
+            }
+        }
+
+        .address {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #cac9c9;
+        }
+
+        .price {
+            font-size: 18px;
+            background-color: #90f2ff;
+            border-radius: 5px;
+            padding: 5px;
+            width: max-content;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            .features {
+                display: flex;
+                gap: 10px;
+                font-size: 14px;
+
+                .feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: #fff;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+
+            .icons {
+                display: flex;
+                gap: 20px;
+                color: #fcf5ff;
+                filter: invert(1);
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #999;
+                    padding: 3px 6px;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: lightgray;
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+$font-heading: 'Playfair Display', serif;
+$font-family: 'Poppins', sans-serif;
+$font-cursive: 'Great Vibes', cursive;
+$background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+$primary-color: #00bcd4;
+$highlight-color: #e91e63;
+$text-light: #FFF;
+$text-dark: #555;
+$icon-background: #8fddf3;
+$section-background: rgba(0, 0, 0, 0.8);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: $background-image;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: -1; 
+  height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
