@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://estate-ease-react-real-estate-webpage-dfag-ogqopyt6d.vercel.app",
+    origin: "https://estate-ease-react-real-estate-webpage-dfag-73072wncv.vercel.app",
     credentials: true,
 }));
 app.use("/api/auth", authRoute);
