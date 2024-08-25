@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-    baseURL: "https://estate-ease-react-real-estate-webpage-t78p-phxhp6hsy.vercel.app/api",
+    baseURL: "https://estateease-react-real-estate-webpage.onrender.com/api",
     withCredentials: true,
 });
 
