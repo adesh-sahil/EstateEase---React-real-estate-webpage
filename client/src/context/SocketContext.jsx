@@ -9,7 +9,7 @@ export const SocketContextProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    setSocket(io(process.env.REACT_APP_SOCKET_URL || "http://localhost:4000"));
+    setSocket(io("https://estateease-react-real-estate-webpage-1.onrender.com"));
   }, []);
 
   useEffect(() => {
