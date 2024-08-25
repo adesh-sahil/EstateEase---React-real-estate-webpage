@@ -2,7 +2,7 @@ import { Server } from "socket.io";
 
 const io = new Server({
   cors: {
-    origin: "https://estate-ease-react-real-estate-webpage-dfag.vercel.app",
+    origin: "https://estate-ease-react-real-estate-webpage-dfag-73072wncv.vercel.app/",
   },
 });
 
