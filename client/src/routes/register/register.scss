@@ -1,4 +1,5 @@
 // Register.scss
+@import "../../responsive.scss";
 $font-heading: "Playfair Display", serif;
 $font-family: "Poppins", sans-serif;
 $font-cursive: "Great Vibes", cursive;
@@ -17,40 +18,60 @@ $icon-background: #fff;
 
   .row {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+    }
 
     .register-left {
       flex: 2;
       color: #f5f5f5;
-      padding: 2rem;
+      padding: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      padding: 3rem;
+      @include tablet {
+        align-items: center;
+      }
+      @include mobile {
+        padding: 0;
+      }
 
       h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
         margin-bottom: 1rem;
-
-        font-size: 2.5rem;
         font-weight: bold;
         span {
           color: #00bcd4;
+        }
+
+        @include tablet {
+          text-align: center;
+        }
+        @include mobile {
+          font-size: 2rem;
         }
       }
 
       p {
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
-        // color: #c5c5c1c1;
+        @include tablet {
+          text-align: center;
+        }
+        @include mobile {
+          font-size: 1rem;
+        }
       }
 
       ul {
         list-style: none;
         padding: 0;
+        
+        @include tablet {
+          display: none;
+        }
 
         li {
           margin-bottom: 0.5rem;
@@ -69,6 +90,10 @@ $icon-background: #fff;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
             font-style: italic;
+
+            @include tablet {
+              display: none;
+            }
         
             span {
               display: block;
@@ -81,6 +106,10 @@ $icon-background: #fff;
           .cta {
             margin-top: 2rem;
             font-size: 1rem;
+
+            @include tablet {
+              display: none;
+            }
         
             a {
               color: #007bff;
@@ -92,35 +121,26 @@ $icon-background: #fff;
               }
             }
           }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 1.5rem;
-      }
     }
 
     .container {
         border-radius: 10px;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        // position: absolute;
-        // overflow: hidden;
-        // width: 768px;
         max-width: 100%;
-        // min-height: 480px;
         opacity: 0.8;
         padding: 0;
 
       .form-container {
         flex: 1;
-        //   background-color: $text-light;
         background: rgba(45, 52, 54, 1);
-        // width: 55%;
-        padding: 30px;
         padding: 50px;
         border-radius: 10px;
         height: fit-content;
         height: 100%;
+
+        @include mobile {
+          padding: 30px;
+        }
 
         h2 {
           font-weight: bold;
@@ -129,6 +149,9 @@ $icon-background: #fff;
           color: $text-dark;
           color: $text-light;
           text-align: center;
+          @include mobile {
+            font-size: 1.4rem;
+          }
         }
 
         .input-box {
