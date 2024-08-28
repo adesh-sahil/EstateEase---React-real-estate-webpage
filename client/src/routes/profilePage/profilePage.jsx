@@ -43,7 +43,6 @@ function ProfilePage() {
     }
   };
 
-
   
   const Loader = () => (
     <div className="loader-container">
